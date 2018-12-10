@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>播放器</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:black;
+            overflow: hidden;
+        }
+        ul{
+            width:200px;
+            height:200px;
+            
+            position:absolute;
+            bottom:100px;
+            left:50%;
+            margin-left:-100px;
+            transform-style:preserve-3d;
+            transform:rotateX(-10deg);
+            animation:sport 6s linear 0s infinite normal;
+        }
+        ul li{
+            list-style:none;
+            width:200px;
+            height:200px;
+            font-size:60px;
+            text-align: center;
+            line-height:200px;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color: black;
+        }
+        ul li img{
+            width:200px;
+            height:200px;
+            border:5px solid skyblue;
+        }
+        ul:hover{
+            animation-play-state:paused;
+        }
+        ul:hover li img{
+            opacity:0.5;
+
+        }
+        ul li:hover img{
+            opacity:1;
+        }
+        .heart{
+            width:130px;
+            height:113px;
+            position:absolute;
+            left:100px;
+            bottom:100px;
+            animation:move 10s linear 0s infinite normal;
+        }
+        ul li:nth-child(1){
+            
+            transform:rotateY(60deg) translateZ(200px);
+        }
+        ul li:nth-child(2){
+            
+            transform:rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            
+            transform:rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            
+            transform:rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+           
+            transform:rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+           
+            transform:rotateY(360deg) translateZ(200px);
+        }
+        @keyframes sport{
+            from{
+                transform:rotateX(-10deg) rotateY(0deg);
+
+
+            }
+            to{
+                transform:rotateX(-10deg) rotateY(360deg);
+
+            }
+        }
+        @keyframes move{
+            0%{
+                left:100px;
+                bottom:100px;
+                opacity:1;
+            }
+            20%{
+                left:300px;
+                bottom:300px;
+                opacity:0;
+            }
+            40%{
+                left:500px;
+                bottom:500px;
+                opacity:1;
+
+            }
+            60%{
+                left:800px;
+                bottom:300px;
+                opacity:0;
+            }
+            80%{
+                left:1200px;
+                bottom:100px;
+                opacity:1;
+            }
+            100%{
+                left:800px;
+                bottom:-200px;
+           
+            }
+        
+        }
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    </style>
+    <body>
+        <ul>
+            <li><img src="images/L2.jpg"></li>
+            <li><img src="images/L3.jpg"></li>
+            <li><img src="images/L4.jpeg"></li>
+            <li><img src="images/L5.jpeg"></li>
+            <li><img src="images/L6.jpg">></li>
+            <li><img src="images/L7.jpg">></li>
+
+
+
+
+
+
+
+        </ul>
+        <img src="images/xin.png" class="heart">
+        <audio autoplay="autoplay" loop="loop">
+            <source src="images/t/leslie2.mp3" type="audio/mp3">
+        </audio>
+
+
+ 
+    </body>
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+</html>
